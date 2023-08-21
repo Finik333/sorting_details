@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 using namespace std;
 int main()
 {
@@ -7,6 +7,9 @@ int main()
     int vsto;
     int gramm;
     float g{};
+    float v;
+    float a;
+    float b;
     setlocale(0, "rus");
     cout << "Пожалуйста введите сколько всего грамм" <<endl;
     cin >> grammv;
@@ -23,4 +26,8 @@ int main()
     }
     g = g / poz;
     cout <<"Средний вес всех позиций: "<< g;
+    v = grammv / g;
+    cout << "Примерно всего деталей: " << v;
+    b = v / 100;
+    a = b * vsto;
 }
